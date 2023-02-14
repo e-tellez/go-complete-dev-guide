@@ -1,13 +1,12 @@
 package main
 
+import "fmt"
+
 func main() {
 	// Different ways of declaring variables
 	// var card string = "Ace of Spades"
 
 	cards := newDeck()
-
-	hand, remainingCards := deal(cards, 5)
-
-	hand.print()
-	remainingCards.print()
+	cards.toString()
+	fmt.Println(cards.toString())
 }
